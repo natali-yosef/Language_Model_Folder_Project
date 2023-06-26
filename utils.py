@@ -41,12 +41,12 @@ def model_saved_path(model_name):
 
 def input_path(model_name):
 #   return f"/content/drive/MyDrive/Colab Notebooks/hackaton_2023_bio/Save/{model_name}/train_input.npy"
-    return f"/input_data/{model_name}/train_input.npy"
+    return f"./input_data/{model_name}/train_input.npy"
 
 
 def output_path(model_name):
 #   return f"/content/drive/MyDrive/Colab Notebooks/hackaton_2023_bio/Save/{model_name}/train_labels.npy"
-    return f"/input_data/{model_name}/train_labels.npy"
+    return f"./input_data/{model_name}/train_labels.npy"
 
 def output_dir_predict(model_name):
   path = f"/content/drive/MyDrive/Colab Notebooks/hackaton_2023_bio/hackathon_output/{model_name}/"
