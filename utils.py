@@ -25,41 +25,36 @@ import sys
 os.path.abspath(sys.argv[0])
 
 def path_to_save_emmbending(model_name):
-#   path = f"/content/drive/MyDrive/Colab Notebooks/hackaton_2023_bio/save_emmbending/{model_name}/"
-#   os.makedirs(path, exist_ok=True)
-#   return path
-    return f"./input_data/{model_name}/"
+  path = f"./input_data/{model_name}/"
+  os.makedirs(path, exist_ok=True)
+  return path
 
 
 def model_saved_path(model_name):
-#   part_path = f"/content/drive/MyDrive/Colab Notebooks/hackaton_2023_bio/models"
-#   path = f"{part_path}/saved_model_{model_name}.h5"
-#   os.makedirs(part_path, exist_ok=True)
-#   return path
-  return f"./models/saved_model_{model_name}.h5"
+  part_path = "./models"
+  path = f"{part_path}/saved_model_{model_name}.h5"
+  os.makedirs(part_path, exist_ok=True)
+  return path
 
 
 def input_path(model_name):
-#   return f"/content/drive/MyDrive/Colab Notebooks/hackaton_2023_bio/Save/{model_name}/train_input.npy"
     return f"./input_data/{model_name}/train_input.npy"
 
 
 def output_path(model_name):
-#   return f"/content/drive/MyDrive/Colab Notebooks/hackaton_2023_bio/Save/{model_name}/train_labels.npy"
     return f"./input_data/{model_name}/train_labels.npy"
 
-def output_dir_predict(model_name):
-  path = f"/content/drive/MyDrive/Colab Notebooks/hackaton_2023_bio/hackathon_output/{model_name}/"
-  os.makedirs(path, exist_ok=True)
-  return path
+# def output_dir_predict(model_name):
+#   path = f"/content/drive/MyDrive/Colab Notebooks/hackaton_2023_bio/hackathon_output/{model_name}/"
+#   os.makedirs(path, exist_ok=True)
+#   return path
 #   return f"./pdb_predictions/"
 
 
 def output_pdb_predictions():
-#   path = f"/content/drive/MyDrive/Colab Notebooks/hackaton_2023_bio/pdb_predictions/"
-#   os.makedirs(path, exist_ok=True)
-#   return path
-  return f"./pdb_predictions/"
+  path = f"./pdb_predictions/"
+  os.makedirs(path, exist_ok=True)
+  return path
 
 
 
