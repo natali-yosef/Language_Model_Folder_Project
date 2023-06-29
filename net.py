@@ -40,7 +40,7 @@ RESNET_1_KERNEL_NUM = 64
 ###############################################################################
 
 RESNET_2_BLOCKS = 8
-RESNET_2_KERNEL_SIZE = 30  # good start may be 3/5
+RESNET_2_KERNEL_SIZE = 15  # good start may be 3/5
 RESNET_2_KERNEL_NUM = 64
 DILATION = [1, 2, 4, 8, 16]
 
